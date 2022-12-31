@@ -1,0 +1,82 @@
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    body{
+    scroll-behavior: smooth;
+    }
+    .navbar .navbar-collapse .active,
+    .navbar .navbar-collapse .nav-link:hover{
+    color: #107eeb;
+    }
+    .main{
+    width: 100%;
+    height: calc(100vh - 68px) ;
+    background-color: #f7f9fe;
+    background-image: url(../photo/1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right ;
+    justify-content: space-between;
+    background-size: 1000px 800px ;
+    }
+    .landing .text-start h1{
+    color: #38507f;
+    }
+    .landing .text-start p span{
+    color: #11254d;
+    font-weight: 500;
+    }
+    .spread .text-intro h1{
+    color:#11254d ;
+    }
+    @media (max-width:992px){
+    .card .container {
+    flex-direction: column;
+    }
+    .imge{
+    display: none;
+    }
+    }  
+    .card{
+    background-color: #f7f9fe;
+    }
+    @media(max-width:992px){
+    .showing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    }
+    .imge{
+    margin-top: 50px;
+    right:40px;
+    top:80px;
+    }
+    @media(max-width:992px) {
+    .cards-pre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    }
+    .arrow{
+    width: 25px; 
+    height: 25px; 
+    background-color: #11254d;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    border: 2px solid red; 
+    transition: 0.3s;
+    font-size: 15px;
+    color: azure;
+    font-weight: bold;
+    }
+    .arrow.show:hover{
+    transform: scale(1.1);
+    }
